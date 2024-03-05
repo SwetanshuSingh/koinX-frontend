@@ -3,6 +3,7 @@ import CryptoDetails from "./components/CryptoDetails";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import Breadcrumb from "./components/ui/Breadcrumb";
+import Trending from "./components/ui/Trending";
 
 const App = () => {
   return (
@@ -12,7 +13,10 @@ const App = () => {
         <Breadcrumb />
         <div className="w-full flex justify-between">
           <CryptoDetails />
-          <Signup />
+          <div className="wrapper flex flex-col gap-[18px]">
+            <Signup />
+            <Trending />
+          </div>
         </div>
       </section>
     </main>
