@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Signup = () => {
     return (
-        <div className="w-[426px] h-[515px] bg-[#0052FE] text-white rounded-lg flex flex-col items-center justify-evenly px-[31px] py-4 font-0">
+        <div className="max-w-[426px] h-[515px] bg-[#0052FE] text-white rounded-lg flex flex-col items-center justify-evenly px-[31px] py-4 font-0">
             <h2 className="w-[268px] text-2xl font-bold text-center leading-10">Get Started with KoinX for FREE</h2>
             <p className="w-[327px] text-sm font-normal text-center leading-6">With our range of features that you can equip for free, KoinX allows you to be more educated and aware of your tax reports.</p>
             <Image
