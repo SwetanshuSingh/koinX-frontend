@@ -1,18 +1,32 @@
+import About from "./components/About";
 import TradingViewWidget from "./components/Chart";
 import CryptoDetails from "./components/CryptoDetails";
 import Navbar from "./components/Navbar";
+import Performance from "./components/Performance";
+import Sentiment from "./components/Sentiment";
 import Signup from "./components/Signup";
 import Breadcrumb from "./components/ui/Breadcrumb";
+import CoinInfoBar from "./components/ui/CoinInfoBar";
+import Trending from "./components/ui/Trending";
 
 const App = () => {
   return (
     <main className="w-full h-full bg-[#EFF2F5] flex flex-col items-center gap-[18px] font-0">
       <Navbar />
-      <section className="w-[1328px] flex flex-col gap-[18px]">
-        <Breadcrumb />
-        <div className="w-full flex justify-between">
+      
+      <Breadcrumb />
+      <section className="w-[1328px] flex justify-between">
+        <div className="left w-full h-full flex flex-col gap-[18px]">
           <CryptoDetails />
+          <CoinInfoBar />
+          <Performance />
+          <Sentiment />
+          <About />
+        </div>
+
+        <div className="right flex flex-col gap-[18px]">
           <Signup />
+          <Trending />
         </div>
       </section>
     </main>
