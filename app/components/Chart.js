@@ -1,4 +1,3 @@
-// TradingViewWidget.jsx
 "use client"
 import React, { useEffect, useRef, memo } from 'react';
 
@@ -7,7 +6,6 @@ function TradingViewWidget() {
 
   useEffect(
     () => {
-      console.log("Effect Fired");  
       const script = document.createElement("script");
       script.src = "https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js";
       script.type = "text/javascript";
@@ -16,12 +14,12 @@ function TradingViewWidget() {
         {
           "symbols": [
             [
-              "BITSTAMP:BTCUSD|1D"
+              "BITSTAMP:BTCUSD|1M|USD"
             ]
           ],
           "chartOnly": true,
-          "width": 550,
-          "height": 400,
+          "width": "837",
+          "height": "460",
           "locale": "en",
           "colorTheme": "light",
           "autosize": false,
@@ -41,16 +39,22 @@ function TradingViewWidget() {
           "maLineColor": "#2962FF",
           "maLineWidth": 1,
           "maLength": 9,
+          "gridLineColor": "rgba(67, 70, 81, 0.52)",
+          "backgroundColor": "rgba(255, 255, 255, 1)",
+          "widgetFontColor": "rgba(0, 0, 0, 0.2)",
           "lineWidth": 2,
           "lineType": 0,
           "dateRanges": [
             "1d|1",
+            "5d|1D",
             "1m|30",
             "3m|60",
             "12m|1D",
-            "60m|1W",
             "all|1M"
-          ]
+          ],
+          "lineColor": "rgba(1, 65, 207, 1)",
+          "topColor": "rgba(1, 65, 207, 0.33)",
+          "dateFormat": "dd MMM"
         }`;
       container.current.appendChild(script);
     },
