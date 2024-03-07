@@ -33,7 +33,7 @@ const About = () => {
                 </div>
 
                 <div className="w-[388px] h-[151px] flex gap-5 items-center rounded-[6.65px] bg-gradient-to-br from-[#FF9865] to-[#EF3031] px-3">
-                    <Image className="w-32 h-32 rounded-lg" src="/assets/profit.png" width={500} height={500} alt="img" />
+                    <Image className="w-32 h-32 rounded-lg" src="/assets/liability.png" width={500} height={500} alt="img" />
 
                     <div className="w-[195px] h-[104px] flex flex-col gap-4">
                         <h2 className="text-white font-bold text-xl">Calculate your tax liability</h2>
