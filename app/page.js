@@ -1,5 +1,6 @@
 import About from "./components/About";
 import CryptoDetails from "./components/CryptoDetails";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Performance from "./components/Performance";
 import Sentiment from "./components/Sentiment";
@@ -32,6 +33,8 @@ const App = () => {
           <Trending />
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 };
