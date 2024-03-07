@@ -1,10 +1,11 @@
 import About from "./components/About";
-import TradingViewWidget from "./components/Chart";
 import CryptoDetails from "./components/CryptoDetails";
 import Navbar from "./components/Navbar";
 import Performance from "./components/Performance";
 import Sentiment from "./components/Sentiment";
 import Signup from "./components/Signup";
+import Team from "./components/Team";
+import Tokenomics from "./components/Tokenomics";
 import Breadcrumb from "./components/ui/Breadcrumb";
 import CoinInfoBar from "./components/ui/CoinInfoBar";
 import Trending from "./components/ui/Trending";
@@ -22,6 +23,8 @@ const App = () => {
           <Performance />
           <Sentiment />
           <About />
+          <Tokenomics />
+          <Team />
         </div>
 
         <div className="right flex flex-col gap-[18px]">
